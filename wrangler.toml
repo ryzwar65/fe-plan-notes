@@ -1,4 +1,4 @@
-name = "plan-notes"
+name = "fe-plan-notes"
 main = "./.output/server/index.mjs"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
