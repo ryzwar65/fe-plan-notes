@@ -13,4 +13,4 @@ binding = "ASSETS"
 # Public runtime config baked at build time AND read by SSR at runtime.
 # Set to the Cloud Run service URL after the backend is deployed.
 [vars]
-NUXT_PUBLIC_API_BASE = "https://CHANGE-ME-cloud-run-url.run.app"
+NUXT_PUBLIC_API_BASE = "https://be-plan-notes-531638498501.us-central1.run.app"
