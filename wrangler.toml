@@ -1,0 +1,16 @@
+name = "plan-notes"
+main = "./.output/server/index.mjs"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+# Static assets emitted by the Nuxt build. The cloudflare-module preset reads
+# this via the `ASSETS` binding (see env.ASSETS in the nitro runtime).
+[assets]
+directory = "./.output/public"
+binding = "ASSETS"
+
+# Public runtime config baked at build time AND read by SSR at runtime.
+# Set to the Cloud Run service URL after the backend is deployed.
+[vars]
+NUXT_PUBLIC_API_BASE = "https://CHANGE-ME-cloud-run-url.run.app"

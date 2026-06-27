@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F5ECD9;
+  --color-bone: #FFF8EC;
+  --color-mustard: #E8A33D;
+  --color-mustard-soft: #F2C880;
+  --color-burnt: #C75B12;
+  --color-terracotta: #C75146;
+  --color-terracotta-soft: #E89A92;
+  --color-olive: #7A8450;
+  --color-olive-soft: #BCC59A;
+  --color-teal-retro: #2A9D8F;
+  --color-teal-soft: #A8D5CE;
+  --color-dusty-blue: #6B95B5;
+  --color-dusty-blue-soft: #BFD3E4;
+  --color-wood: #8B5A2B;
+  --color-ink: #1A1814;
+  --color-ink-soft: #4A4540;
+  --color-paper: #FFFDF6;
+
+  --font-display: "Archivo Black", "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-serif: "DM Serif Display", Georgia, serif;
+
+  --shadow-brutal: 6px 6px 0 0 var(--color-ink);
+  --shadow-brutal-sm: 4px 4px 0 0 var(--color-ink);
+  --shadow-brutal-lg: 10px 10px 0 0 var(--color-ink);
+  --shadow-brutal-inset: inset 4px 4px 0 0 var(--color-ink);
+}
+
+@layer base {
+  html, body, #__nuxt {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  .font-display { font-family: var(--font-display); }
+  .font-mono { font-family: var(--font-mono); }
+  .font-serif { font-family: var(--font-serif); }
+
+  ::selection {
+    background: var(--color-mustard);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .shadow-brutal { box-shadow: var(--shadow-brutal); }
+  .shadow-brutal-sm { box-shadow: var(--shadow-brutal-sm); }
+  .shadow-brutal-lg { box-shadow: var(--shadow-brutal-lg); }
+
+  .border-brutal { border: 2px solid var(--color-ink); }
+  .border-brutal-thick { border: 3px solid var(--color-ink); }
+
+  .brutal-press {
+    transition: transform 120ms ease, box-shadow 120ms ease;
+  }
+  .brutal-press:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 0 var(--color-ink);
+  }
+  .brutal-press:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 0 var(--color-ink);
+  }
+
+  .grid-paper {
+    background-image:
+      linear-gradient(to right, rgba(26,24,20,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(26,24,20,0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}

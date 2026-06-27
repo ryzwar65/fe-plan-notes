@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "Bash(rtk read *)",
+      "Bash(rtk ps *)",
+      "Bash(rtk curl *)",
+      "Bash(rtk grep *)",
+      "Bash(> /tmp/nuxt-dev.log)",
+      "Bash(curl -sS -H 'Cookie: auth_token=sess_zlqr36jz' -o /dev/null -w '%{http_code}' http://localhost:3000__TRACKED_VAR__)",
+      "Bash(rtk find *)",
+      "Bash(bun run *)",
+      "Bash(rtk npx *)",
+      "Bash(kill %1)",
+      "Bash(bun add *)",
+      "Bash(\"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/@esbuild/darwin-arm64/bin/esbuild\" --bundle)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(node *)",
+      "Bash(xattr \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/@esbuild/darwin-arm64/bin/esbuild\")",
+      "Bash(xattr \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/esbuild/bin/esbuild\")",
+      "Bash(xattr -dr com.apple.provenance \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/@esbuild/darwin-arm64/bin/esbuild\")",
+      "Bash(xattr -dr com.apple.provenance \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/esbuild/bin/esbuild\")",
+      "Bash(codesign -v \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/@esbuild/darwin-arm64/bin/esbuild\")",
+      "Bash(spctl --assess \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/@esbuild/darwin-arm64/bin/esbuild\")",
+      "Bash(codesign --sign - --force \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/@esbuild/darwin-arm64/bin/esbuild\")",
+      "Bash(codesign --sign - --force \"/Users/anwar/My Training/Project Pribadi/plan-notes/backend/node_modules/esbuild/bin/esbuild\")",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(timeout 10 node_modules/.bin/wrangler dev --port 3001)",
+      "Bash(node_modules/.bin/wrangler d1 *)"
+    ]
+  }
+}
